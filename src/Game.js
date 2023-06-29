@@ -4,11 +4,11 @@ import styles from "./Game.module.css";
 const choiceStyles = {
   display: "flex",
   alignItems: "center",
-  marginBottom: 40
+  marginBottom: 10
 };
 
 const emojiStyles = {
-    fontSize: 64,
+    fontSize: 34,
     marginRight: 20
 };
 
@@ -19,8 +19,8 @@ const nameStyles = {
 };
 
 const resultStyles = {
-  marginTop: 40,
-  fontSize: 48,
+  marginTop: 10,
+  fontSize: 38,
   color: "#ffff"
 };
 
@@ -60,7 +60,7 @@ function Game() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: 48, marginTop: 0}}>Rock Paper Scissors</h1>
+      <h1 style={{fontSize: 48, marginTop: 0}}>Rock Paper Scissors Game</h1>
       <div className={styles.choices}>
         {CHOICES.map((choice) => (
           <button
